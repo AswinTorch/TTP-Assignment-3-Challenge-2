@@ -30,3 +30,8 @@ const calculateVolume = () => {
   return false;
 }
 // End of Bonus Page JS
+
+//hover js 
+$('.noHover').hover(function(){
+  alert("You dont listen huh! I said DON'T HOVER OVER ME!");
+})
