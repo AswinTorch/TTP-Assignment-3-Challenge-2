@@ -1,3 +1,10 @@
+.button {
+  text-align: left;
+  padding: 10% 20%;
+  height: 50px;
+  background: lightblue;
+  border-radius: 10px;
+}
 body {
   text-align: center;
 }
