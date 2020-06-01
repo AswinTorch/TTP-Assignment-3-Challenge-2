@@ -1,3 +1,4 @@
+//argyuing buttons #1
 $(document).ready(function() {
 
 	function printHTML(text){
@@ -8,11 +9,24 @@ $(document).ready(function() {
 
 	$('#buttonOne').click(function(){
         $('.text2').remove();
-			printHTML("<h2 class='text1'>Told ya I was right! </h2>" );
+			printHTML("<h1 class='text1'>Told ya I was right! </h1>" );
 		})
 
 	$('#buttonTwo').click(function(){
         $('.text1').remove();
-			printHTML("<h2 class='text2'> Loser, Haha I was right!! </h2>");
+			printHTML("<h1 class='text2'> Loser, Haha I was right!! </h1>");
     })
 })
+console.log("Scripts file linked!");
+
+// Bonus Page JS
+const calculateVolume = () => {
+  console.log("Button clicked!")
+  let r = document.getElementById("radius").value;
+  let volume = (4.0 / 3.0) * Math.PI * Math.pow(r, 3);
+  volume = (Math.round(volume * 100) / 100).toFixed(2);
+  let volumeLabel = document.getElementById("volumeLabel");
+  volumeLabel.innerText = "Volume: " + volume;
+  return false;
+}
+// End of Bonus Page JS
